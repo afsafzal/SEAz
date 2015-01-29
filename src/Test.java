@@ -54,4 +54,21 @@ class Test
             System.out.println("Multiply: Failed, expected = " + expected + ", result = " + result);
         }
     }
+
+    private static void testDivide()
+    {
+        int a = 10;
+        int b = 5;
+        int expected = 2;
+        BasicMath bm = new BasicMath();
+        int result = bm.multiply(a, b);
+        if (result == expected)
+        {
+            System.out.println("Divide: OK");
+        }
+        else
+        {
+            System.out.println("Divide: Failed, expected = " + expected + ", result = " + result);
+        }
+    }
 }
